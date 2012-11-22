@@ -1124,6 +1124,7 @@ declare module google.maps {
 
     export class StreetViewService {
         constructor ();
+        constructor ();
         getPanoramaById(pano: string, callback: (streetViewPanoramaData: StreetViewPanoramaData, streetViewStatus: StreetViewStatus) => void );
         getPanoramaByLocation(latlng: LatLng, radius: number, callback: (streetViewPanoramaData: StreetViewPanoramaData, streetViewStatus: StreetViewStatus) => void );
     }
