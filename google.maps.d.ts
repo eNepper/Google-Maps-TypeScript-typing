@@ -1122,7 +1122,8 @@ declare module google.maps {
         worldSize?: Size;
     }
 
-    export interface StreetViewService {
+    export class StreetViewService {
+        constructor ();
         getPanoramaById(pano: string, callback: (streetViewPanoramaData: StreetViewPanoramaData, streetViewStatus: StreetViewStatus) => void );
         getPanoramaByLocation(latlng: LatLng, radius: number, callback: (streetViewPanoramaData: StreetViewPanoramaData, streetViewStatus: StreetViewStatus) => void );
     }
