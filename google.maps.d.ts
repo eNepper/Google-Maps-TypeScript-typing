@@ -75,6 +75,9 @@ declare module google.maps {
         setStreetView(panorama: StreetViewPanorama): void;
         setTilt(tilt: number): void;
         setZoom(zoom: number): void;
+        controls: MVCArray[];
+        mapTypes: MapTypeRegistry;
+        overlayMapTypes: MVCArray;
     }
 
     export interface MapOptions {
