@@ -32,8 +32,7 @@ declare module google.maps {
         get(key: string): any;
         notify(key: string): void;
         set(key: string, value: any): void;
-        setValues(values: any): void;
-        setValues(values: undefined);
+        setValues(values?: any): void;
         unbind(key: string): void;
         unbindAll(): void;
     }
