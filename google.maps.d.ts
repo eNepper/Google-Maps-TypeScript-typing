@@ -341,16 +341,16 @@ declare module google.maps {
         constructor (opts?: PolygonOptions);
         getEditable(): boolean;
         getMap(): Map;
-        getPath(): MVCArray[];
-        getPaths(): MVCArray[][];
+        getPath(): MVCArray
+        getPaths(): MVCArray[];
         getVisible(): boolean;
         setEditable(editable: boolean): void;
         setMap(map: Map): void;
         setOptions(options: PolygonOptions): void;
-        setPath(path: MVCArray[]): void;
+        setPath(path: MVCArray): void;
         setPath(path: LatLng[]): void;
+        setPaths(paths: MVCArray): void;
         setPaths(paths: MVCArray[]): void;
-        setPaths(paths: MVCArray[][]): void;
         setPaths(path: LatLng[]): void;
         setPaths(path: LatLng[][]): void;
         setVisible(visible: boolean): void;
