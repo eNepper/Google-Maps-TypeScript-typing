@@ -1100,7 +1100,7 @@ declare module google.maps {
 
     export interface StreetViewPov {
         heading?: number;
-        picth?: number;
+        pitch?: number;
         zoom?: number;
     }
 
