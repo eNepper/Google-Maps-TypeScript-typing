@@ -307,13 +307,13 @@ declare module google.maps {
         constructor (opts?: PolylineOptions);
         getEditable(): boolean;
         getMap(): Map;
-        getPath(): MVCArray[];
+        getPath(): MVCArray<LatLng>;
         getVisible(): boolean;
         setEditable(editable: boolean): void;
         setMap(map: Map): void;
         setOptions(options: PolylineOptions): void;
-        setPath(path: MVCArray[]): void;
-        setPath(path: LatLng[]): void;
+        setPath(path: MVCArray<LatLng>): void;
+        setPath(path: LatLng[] | MVCArray<LatLng>): void;
         setVisible(visible: boolean): void;
     }
 
